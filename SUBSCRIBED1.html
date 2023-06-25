@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./subcscribe.css">
+    <script src="./subscribe.js"defer></script>
+</head>
+<body>
+    <button value="Subcscribe" id="button" onclick="subscribebutton()" onblur="discount()">
+        <img src="./bell.jpg" >
+        <span id="message">Subscribe</span>
+        <span id="dropdwonicon">V</span>
+        <div  id="container">
+            <ul id="mainlist">
+                <li class="li" onclick="replaceicon('All')">
+                    <img src="./ring.png" alt="">
+                <span>All</span></li>
+                <li class="li" onclick="replaceicon('Per')">
+                    <img src="./bell.jpg" alt="">
+                    <span>Personalised</span>
+                </li>
+                <li class="li" onclick="replaceicon('none')">
+                    <img src="./mute.jpg" alt="">
+                    <span>None</span>
+                </li>
+                <li class="li" onclick="replaceicon()">
+                    <img src="./unsubscribe.jpg" alt="">
+                    <span>Unsubscribe</span>
+                </li>
+            </ul>
+        </div>
+    </button>
+    <div id="unsubscribe">
+        <span>are you sure to unsubscribe ?</span>
+        <input type="button" value="cancle" id="cancle" onclick="unsubscribenone()">
+        <input type="button" value="unsubscribe" id="unsubscribeBut" onclick="unsubscribe()"> 
+    </div>
+</body>
+</html>
